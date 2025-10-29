@@ -1,0 +1,119 @@
+import { Clock } from "lucide-react";
+
+const Schedule = () => {
+  const scheduleData = [
+    {
+      day: "Day 1",
+      date: "March 15, 2024",
+      events: [
+        { time: "09:00 AM", title: "Registration & Welcome", location: "Main Lobby" },
+        { time: "10:00 AM", title: "Opening Ceremony", location: "Main Auditorium" },
+        { time: "11:30 AM", title: "Keynote: Future of AI", location: "Main Auditorium" },
+        { time: "01:00 PM", title: "Lunch Break", location: "Cafeteria" },
+        { time: "02:30 PM", title: "Workshop: Web Development", location: "Lab 101" },
+        { time: "05:00 PM", title: "Networking Session", location: "Main Hall" },
+        { time: "07:00 PM", title: "Cultural Evening", location: "Open Theater" },
+      ],
+    },
+    {
+      day: "Day 2",
+      date: "March 16, 2024",
+      events: [
+        { time: "09:00 AM", title: "Coding Competition Begins", location: "Computer Labs" },
+        { time: "11:00 AM", title: "Panel Discussion: Startups", location: "Seminar Hall" },
+        { time: "01:00 PM", title: "Lunch Break", location: "Cafeteria" },
+        { time: "02:00 PM", title: "Workshop: Machine Learning", location: "Lab 201" },
+        { time: "04:30 PM", title: "Innovation Showcase", location: "Exhibition Hall" },
+        { time: "06:30 PM", title: "Tech Quiz Competition", location: "Auditorium" },
+        { time: "08:00 PM", title: "Gaming Night", location: "Gaming Zone" },
+      ],
+    },
+    {
+      day: "Day 3",
+      date: "March 17, 2024",
+      events: [
+        { time: "09:00 AM", title: "Hackathon Finals", location: "Main Hall" },
+        { time: "11:30 AM", title: "Guest Speaker: Industry Leader", location: "Auditorium" },
+        { time: "01:00 PM", title: "Lunch Break", location: "Cafeteria" },
+        { time: "02:30 PM", title: "Project Presentations", location: "Conference Room" },
+        { time: "05:00 PM", title: "Award Ceremony", location: "Main Auditorium" },
+        { time: "06:30 PM", title: "Closing Ceremony", location: "Main Auditorium" },
+        { time: "08:00 PM", title: "Farewell Party", location: "Open Grounds" },
+      ],
+    },
+  ];
+
+  return (
+    <div className="min-h-screen pt-24 pb-12">
+      <div className="container mx-auto px-4">
+        {/* Header */}
+        <div className="text-center mb-16 animate-fade-in">
+          <h1 className="text-5xl md:text-6xl font-black mb-6 bg-gradient-primary bg-clip-text text-transparent" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+            Event Schedule
+          </h1>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Three days of innovation, learning, and excitement
+          </p>
+        </div>
+
+        {/* Schedule Timeline */}
+        <div className="max-w-5xl mx-auto space-y-12">
+          {scheduleData.map((day, dayIndex) => (
+            <div key={dayIndex} className="animate-fade-in" style={{ animationDelay: `${dayIndex * 0.1}s` }}>
+              {/* Day Header */}
+              <div className="mb-8">
+                <h2 className="text-3xl font-bold mb-2 text-primary" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+                  {day.day}
+                </h2>
+                <p className="text-muted-foreground">{day.date}</p>
+              </div>
+
+              {/* Events */}
+              <div className="space-y-4">
+                {day.events.map((event, eventIndex) => (
+                  <div
+                    key={eventIndex}
+                    className="flex gap-6 p-6 rounded-lg bg-card border border-border hover:border-primary transition-all duration-300 hover:shadow-glow-cyan group"
+                  >
+                    {/* Time */}
+                    <div className="flex-shrink-0 w-32">
+                      <div className="flex items-center gap-2 text-primary">
+                        <Clock size={18} />
+                        <span className="font-semibold">{event.time}</span>
+                      </div>
+                    </div>
+
+                    {/* Event Details */}
+                    <div className="flex-grow">
+                      <h3 className="text-lg font-semibold mb-1 group-hover:text-primary transition-colors">
+                        {event.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground">{event.location}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Download CTA */}
+        <div className="mt-16 text-center">
+          <div className="inline-block p-8 rounded-lg bg-gradient-primary">
+            <h3 className="text-2xl font-bold mb-4 text-primary-foreground">
+              Download Full Schedule
+            </h3>
+            <p className="text-primary-foreground/80 mb-6">
+              Get the complete event schedule with all details
+            </p>
+            <button className="px-6 py-3 bg-background text-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity">
+              Download PDF
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Schedule;
