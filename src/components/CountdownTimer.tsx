@@ -37,7 +37,7 @@ const CountdownTimer = ({ targetDate }: { targetDate: Date }) => {
 
   const TimeBlock = ({ value, label }: { value: number; label: string }) => (
     <div className="flex flex-col items-center p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-primary/20 min-w-[80px]">
-      <span className="text-4xl md:text-5xl font-bold text-primary mb-1" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+      <span className="text-4xl md:text-5xl font-bold text-primary mb-1">
         {value.toString().padStart(2, "0")}
       </span>
       <span className="text-xs md:text-sm text-muted-foreground uppercase tracking-wider">
