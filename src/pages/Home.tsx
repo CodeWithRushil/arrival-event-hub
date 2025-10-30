@@ -25,7 +25,7 @@ const Home = () => {
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 text-center">
           <div className="animate-fade-in">
-            <h1 className="text-6xl md:text-8xl font-black mb-6 bg-gradient-primary bg-clip-text text-transparent tracking-tight" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+            <h1 className="text-6xl md:text-8xl font-black mb-6 text-outline-thick tracking-tight drop-shadow-[0_0_30px_rgba(52,211,235,0.5)]">
               ARRIVAL
             </h1>
             <p className="text-xl md:text-2xl text-foreground/90 mb-12 max-w-2xl mx-auto">

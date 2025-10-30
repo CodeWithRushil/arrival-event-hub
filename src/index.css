@@ -88,3 +88,19 @@ All colors MUST be HSL.
     scrollbar-color: hsl(var(--primary)) hsl(var(--background));
   }
 }
+
+@layer utilities {
+  .text-outline {
+    -webkit-text-stroke: 2px hsl(var(--primary));
+    -webkit-text-fill-color: transparent;
+    text-stroke: 2px hsl(var(--primary));
+    paint-order: stroke fill;
+  }
+
+  .text-outline-thick {
+    -webkit-text-stroke: 3px hsl(var(--primary));
+    -webkit-text-fill-color: transparent;
+    text-stroke: 3px hsl(var(--primary));
+    paint-order: stroke fill;
+  }
+}
