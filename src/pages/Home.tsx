@@ -5,9 +5,8 @@ import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Home = () => {
-  // Set event date (example: 30 days from now)
-  const eventDate = new Date();
-  eventDate.setDate(eventDate.getDate() + 30);
+  // Set event date to November 7, 2025
+  const eventDate = new Date('2025-11-07T00:00:00');
 
   return (
     <div className="min-h-screen">
