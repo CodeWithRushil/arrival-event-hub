@@ -6,7 +6,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-5xl md:text-6xl font-black mb-6 bg-gradient-primary bg-clip-text text-transparent" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+          <h1 className="text-5xl md:text-6xl font-black mb-6 bg-gradient-primary bg-clip-text text-transparent">
             About ARRIVAL
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -69,25 +69,25 @@ const About = () => {
         <div className="bg-gradient-primary p-12 rounded-2xl">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="animate-fade-in">
-              <div className="text-4xl md:text-5xl font-black mb-2 text-primary-foreground" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+              <div className="text-4xl md:text-5xl font-black mb-2 text-primary-foreground">
                 500+
               </div>
               <div className="text-primary-foreground/80">Participants</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
-              <div className="text-4xl md:text-5xl font-black mb-2 text-primary-foreground" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+              <div className="text-4xl md:text-5xl font-black mb-2 text-primary-foreground">
                 20+
               </div>
               <div className="text-primary-foreground/80">Events</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              <div className="text-4xl md:text-5xl font-black mb-2 text-primary-foreground" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+              <div className="text-4xl md:text-5xl font-black mb-2 text-primary-foreground">
                 15+
               </div>
               <div className="text-primary-foreground/80">Speakers</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              <div className="text-4xl md:text-5xl font-black mb-2 text-primary-foreground" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+              <div className="text-4xl md:text-5xl font-black mb-2 text-primary-foreground">
                 3
               </div>
               <div className="text-primary-foreground/80">Days</div>
