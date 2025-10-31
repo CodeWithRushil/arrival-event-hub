@@ -5,15 +5,15 @@ const Team = () => {
     {
       name: "SIAM",
       members: [
-        { name: "Ritik Joshi", role: "President", email: "sarah.j@college.edu" },
-        { name: "Nandaya Vegad", role: "Vice President", email: "rahul@college.edu" },
-        { name: "Suhani Saini", role: "Secretary", email: "priya@college.edu" },
-        { name: "Sameeksha Shakya", role: "Joint Secretary", email: "arjun@college.edu" },
-        { name: "Aenansh Mittal", role: "Treasurer", email: "sneha@college.edu" },
-        { name: "Omansh Sharma", role: "Webmaster", email: "vikram@college.edu" },
-        { name: "Devansh Kalia", role: "Research Head", email: "ananya@college.edu" },
-        { name: "Vansh Soni", role: "Public Relations Head", email: "rohan@college.edu" },
-        { name: "Manya Sethi", role: "Operations Head", email: "rohan@college.edu" },
+        { name: "Ritik Joshi", role: "President", email: "sarah.j@college.edu", imag: "Harshit_Goyal.JPG" },
+        { name: "Nandaya Vegad", role: "Vice President", email: "rahul@college.edu", image: "Nandaya_Vegad.jpg" },
+        { name: "Suhani Saini", role: "Secretary", email: "priya@college.edu", image: "Suhani_Saini.jpg" },
+        { name: "Sameeksha Shakya", role: "Joint Secretary", email: "arjun@college.edu", image: "Sameeksha_Shakya.jpg" },
+        { name: "Aenansh Mittal", role: "Treasurer", email: "sneha@college.edu", image: "Aenansh_Mittal.jpg" },
+        { name: "Omansh Sharma", role: "Webmaster", email: "vikram@college.edu", image: "Omansh_Sharma.jpg" },
+        { name: "Devansh Kalia", role: "Research Head", email: "ananya@college.edu", imag: "Harshit_Goyal.JPG" },
+        { name: "Vansh Soni", role: "Public Relations Head", email: "rohan@college.edu", imag: "Harshit_Goyal.JPG" },
+        { name: "Manya Sethi", role: "Operations Head", email: "rohan@college.edu", image: "Manya_Sethi.jpg" },
       ],
     },
     {
@@ -33,7 +33,7 @@ const Team = () => {
       email: "jay290120@gmail.com",
       linkedin: "https://www.linkedin.com/in/jayendrasingh29/",
       instagram: "https://www.instagram.com/jayendra_k98/",
-      imag: "Jayendra Singh"
+      image: "Jayendra_Singh.jpg"
     },
     {
       name: "Nandini Singh",
@@ -49,7 +49,7 @@ const Team = () => {
       email: "shubhamnagpal623@gmail.com",
       linkedin: "https://www.linkedin.com/in/shubham-nagpal-691941309/",
       instagram: "https://www.instagram.com/shubham_nagpal__/?hl=en",
-      imag: "Shubham Nagpal"
+      image: "Shubham.webp"
     },
     {
       name: "Aaditya Shekhar Singh",
@@ -73,7 +73,7 @@ const Team = () => {
       email: "kkhandelwal4999@gmail.com",
       linkedin: "https://www.linkedin.com/in/khandelwal005/",
       instagram: "https://www.instagram.com/_mr._khandelwal/",
-      imag: "Keshav Khandelwal"
+      image: "Keshav_Khandelwal.jpg"
     },
     {
       name: "Prakhar Kulshrestha",
@@ -81,7 +81,7 @@ const Team = () => {
       email: "prakharkul27@gmail.com",
       linkedin: "https://www.linkedin.com/in/prakhar-kulshrestha-461461293",
       instagram: "https://www.instagram.com/_prakhar2712_?igsh=Z2p4YXhsZHc0bjBv",
-      imag: "Prakhar Kulshrestha"
+      image: "Prakhar_Kulshrestha.jpg"
     },
     {
       name: "Shruti Sharma",
@@ -89,7 +89,7 @@ const Team = () => {
       email: "shrutisharma132005@gmail.com",
       linkedin: "https://www.linkedin.com/in/shruti-sharma-180286295/",
       instagram: "https://www.instagram.com/_shrugar/",
-      imag: "Shruti Sharma"
+      image: "Shruti_Sharma.jpg"
     },
     {
       name: "Edann",
@@ -105,7 +105,7 @@ const Team = () => {
       email: "taniamehta305@gmail.com",
       linkedin: "https://www.linkedin.com/in/taniamehta06/",
       instagram: "https://www.instagram.com/t.a.n.i.a_.3712/",
-      imag: "Tania Mehta"
+      image: "Tania_Mehta.png"
     }
   ]
 }
