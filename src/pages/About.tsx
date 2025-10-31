@@ -14,54 +14,77 @@ const About = () => {
           </p>
         </div>
 
-        {/* Main Content */}
-        <div className="max-w-4xl mx-auto mb-16 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-          <div className="prose prose-invert max-w-none">
-            <p className="text-lg text-foreground/90 leading-relaxed mb-6">
-              ARRIVAL is the premier college event that brings together students, innovators, and industry leaders
-              for an unforgettable experience of learning, competition, and networking. Our mission is to inspire
-              the next generation of tech pioneers and create a platform where ideas come to life.
-            </p>
-            <p className="text-lg text-foreground/90 leading-relaxed mb-6">
-              Over the course of three action-packed days, participants will engage in cutting-edge workshops,
-              thrilling competitions, inspiring keynote sessions, and collaborative projects that push the
-              boundaries of what's possible in technology and innovation.
-            </p>
-          </div>
-        </div>
-
-        {/* Mission, Vision, Values */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-          <div className="bg-card p-8 rounded-lg border border-border hover:border-primary transition-all duration-300 animate-slide-in-left">
-            <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-6">
-              <Target className="text-primary" size={32} />
+        {/* About Sections */}
+        <div className="space-y-12 mb-16">
+          {/* About Arrival */}
+          <div className="max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '0.1s' }}>
+            <div className="bg-card p-8 rounded-lg border border-border">
+              <h2 className="text-3xl font-bold mb-6 text-primary">About ARRIVAL</h2>
+              <div className="prose prose-invert max-w-none">
+                <p className="text-lg text-foreground/90 leading-relaxed mb-4">
+                  Arrival is an engaging and multifaceted cultural and technical fest that brings together creativity, 
+                  collaboration, and innovation under one roof.
+                </p>
+                <p className="text-lg text-foreground/90 leading-relaxed mb-4">
+                  Comprising a diverse array of events, ranging from technical competitions and cultural showcases to 
+                  workshops and exhibitions, Arrival serves as a vibrant platform for students to express their talents, 
+                  exchange ideas, and explore new dimensions of learning and entertainment. Each segment of the fest is 
+                  crafted to highlight a unique facet of student excellence: from showcasing artistic brilliance and 
+                  technical ingenuity to fostering teamwork and leadership.
+                </p>
+                <p className="text-lg text-foreground/90 leading-relaxed">
+                  In essence, Arrival is more than just an annual fest—it's a celebration of passion, diversity, and 
+                  the ever-evolving spirit of the student community, where innovation meets inspiration and ideas come to life.
+                </p>
+              </div>
             </div>
-            <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-            <p className="text-muted-foreground">
-              To empower students with knowledge, skills, and connections that will shape their future
-              in the technology industry.
-            </p>
           </div>
 
-          <div className="bg-card p-8 rounded-lg border border-border hover:border-primary transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-            <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-6">
-              <Lightbulb className="text-primary" size={32} />
+          {/* About SIAM */}
+          <div className="max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <div className="bg-card p-8 rounded-lg border border-border">
+              <h2 className="text-3xl font-bold mb-6 text-primary">About SIAM JUIT</h2>
+              <p className="text-sm text-muted-foreground mb-4 italic">Organizing Club</p>
+              <div className="prose prose-invert max-w-none">
+                <p className="text-lg text-foreground/90 leading-relaxed mb-4">
+                  The Society for Industrial and Applied Mathematics (SIAM) is a global community of over 14,000 
+                  individual members and nearly 500 institutional members, dedicated to advancing the application of 
+                  mathematics and computational science to real-world problems. By fostering collaboration among 
+                  mathematicians, engineers, scientists, and researchers, SIAM plays a vital role in promoting 
+                  innovation and practical solutions that impact diverse fields such as data science, engineering, 
+                  economics, and technology.
+                </p>
+                <p className="text-lg text-foreground/90 leading-relaxed">
+                  SIAM-JUIT, the sixth official student chapter in India, proudly follows in the footsteps of 
+                  prestigious institutions like IISc Bangalore, DTU Delhi, and IIT Guwahati. The chapter is a vibrant 
+                  platform for students to bridge the gap between theoretical knowledge and industrial applications. 
+                  SIAM-JUIT encourages interdisciplinary learning and cultivates a spirit of inquiry among young researchers.
+                </p>
+              </div>
             </div>
-            <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-            <p className="text-muted-foreground">
-              To become the most anticipated college tech event that bridges the gap between academic
-              learning and industry innovation.
-            </p>
           </div>
 
-          <div className="bg-card p-8 rounded-lg border border-border hover:border-primary transition-all duration-300 animate-slide-in-right">
-            <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-6">
-              <Trophy className="text-primary" size={32} />
+          {/* About IEEE */}
+          <div className="max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            <div className="bg-card p-8 rounded-lg border border-border">
+              <h2 className="text-3xl font-bold mb-6 text-primary">About IEEE JUIT</h2>
+              <p className="text-sm text-muted-foreground mb-4 italic">Organizing Club</p>
+              <div className="prose prose-invert max-w-none">
+                <p className="text-lg text-foreground/90 leading-relaxed mb-4">
+                  The IEEE JUIT Student Branch emerges as an innovative and dynamic channel of the IEEE organization, 
+                  committed to realizing its global mission of fostering technological excellence and professional growth. 
+                  Its goals, which are both scientific and educational in nature, are directed towards advancing the 
+                  theory and practice of electrical, electronic communication, computer science, and engineering disciplines.
+                </p>
+                <p className="text-lg text-foreground/90 leading-relaxed">
+                  At JUIT, the branch serves as a vibrant platform that connects passionate students, researchers, and 
+                  technologists, encouraging them to explore, innovate, and collaborate. Through various workshops, 
+                  technical talks, hackathons, and collaborative projects, the IEEE JUIT Student Branch nurtures 
+                  creativity and bridges the gap between academic learning and industry practices. IEEE JUIT stands as 
+                  a community of forward-thinking individuals united by curiosity and collaboration.
+                </p>
+              </div>
             </div>
-            <h3 className="text-2xl font-bold mb-4">Our Values</h3>
-            <p className="text-muted-foreground">
-              Innovation, collaboration, excellence, and inclusivity drive everything we do at ARRIVAL.
-            </p>
           </div>
         </div>
 
