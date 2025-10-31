@@ -25,7 +25,7 @@ const Home = () => {
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 text-center">
           <div className="animate-fade-in">
-            <h1 className="text-6xl md:text-8xl font-black mb-6 text-outline-thick tracking-tight drop-shadow-[0_0_30px_rgba(52,211,235,0.5)]">
+            <h1 className="text-5xl sm:text-6xl md:text-8xl font-black mb-6 text-outline-thick tracking-tight drop-shadow-[0_0_30px_rgba(52,211,235,0.5)]">
               ARRIVAL
             </h1>
             <p className="text-xl md:text-2xl text-foreground/90 mb-12 max-w-2xl mx-auto">
@@ -64,9 +64,7 @@ const Home = () => {
                 <Calendar className="text-primary" size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-2">Date</h3>
-              <p className="text-muted-foreground">
-                {eventDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
-              </p>
+              <p className="text-muted-foreground">7 Nov to 9 Nov</p>
             </div>
 
             <div className="flex flex-col items-center text-center p-6 rounded-lg bg-card/50 backdrop-blur-sm border border-border animate-fade-in" style={{ animationDelay: '0.1s' }}>
@@ -97,12 +95,42 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { title: "Tech Workshops", desc: "Hands-on sessions with industry experts" },
-              { title: "Coding Competition", desc: "Showcase your programming skills" },
-              { title: "Guest Speakers", desc: "Learn from tech industry leaders" },
-              { title: "Networking", desc: "Connect with peers and professionals" },
-              { title: "Innovation Showcase", desc: "Present your groundbreaking ideas" },
-              { title: "Cultural Events", desc: "Evening entertainment and performances" },
+              { 
+                title: "HACKATHON", 
+                desc: "A thrilling 24-hour marathon starting at 12 PM where innovation meets endurance! Turn bold ideas into real-world solutions through creativity, collaboration, and cutting-edge technology addressing modern challenges." 
+              },
+              { 
+                title: "CODING FACEOFF", 
+                desc: "An intense competitive programming event testing logic, speed, and problem-solving skills. Tackle progressively complex problems demanding precision, creativity, and efficiency under pressure." 
+              },
+              { 
+                title: "CYBER SESSION", 
+                desc: "Dive into cybersecurity fundamentals with this engaging workshop. Learn ethical hacking, digital forensics, and online security from experts to defend against today's evolving digital threats." 
+              },
+              { 
+                title: "CAPTURE THE FLAG", 
+                desc: "A 12-hour cybersecurity marathon! Test your ethical hacking, cryptography, and web security skills by uncovering hidden flags and solving complex puzzles. Only the sharpest minds prevail!" 
+              },
+              { 
+                title: "IOT IDEATHON", 
+                desc: "Where creativity meets technology! Teams brainstorm and pitch innovative Internet of Things solutions to real-world challenges—from smart cities to sustainable tech." 
+              },
+              { 
+                title: "IOT SESSION", 
+                desc: "Explore connected technology possibilities in this insightful workshop. Learn about IoT systems, sensors, and real-time applications to turn ideas into smart solutions." 
+              },
+              { 
+                title: "WIKIPEDIA RACE", 
+                desc: "A fast-paced competition where participants race through Wikipedia pages to reach a target topic using the fewest clicks possible. Quick thinking and clever navigation win!" 
+              },
+              { 
+                title: "MOVIE NIGHT", 
+                desc: "Unwind with a cozy gathering that brings the community together through film. Enjoy a cinematic experience filled with laughter, emotion, and great company under the stars." 
+              },
+              { 
+                title: "CRYPTIC QUEST", 
+                desc: "Embark on an exhilarating journey through riddles, codes, and mysteries! This mind-bending challenge tests your wit and teamwork as you decode your way to the finish line." 
+              },
             ].map((item, index) => (
               <div
                 key={index}
