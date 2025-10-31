@@ -1,48 +1,31 @@
 import { Mail, Linkedin } from "lucide-react";
 
 const Team = () => {
-  const teamCategories = [
+  const clubs = [
     {
-      title: "Faculty Coordinators",
+      name: "SIAM",
       members: [
         { name: "Dr. Sarah Johnson", role: "Faculty Advisor", email: "sarah.j@college.edu" },
-        { name: "Prof. Michael Chen", role: "Technical Coordinator", email: "m.chen@college.edu" },
-      ],
-    },
-    {
-      title: "Core Organizing Committee",
-      members: [
-        { name: "Rahul Sharma", role: "Event Head", email: "rahul@college.edu" },
-        { name: "Priya Patel", role: "Co-Event Head", email: "priya@college.edu" },
+        { name: "Rahul Sharma", role: "President", email: "rahul@college.edu" },
+        { name: "Priya Patel", role: "Vice President", email: "priya@college.edu" },
         { name: "Arjun Mehta", role: "Technical Lead", email: "arjun@college.edu" },
-        { name: "Sneha Reddy", role: "Operations Manager", email: "sneha@college.edu" },
-      ],
-    },
-    {
-      title: "Technical Team",
-      members: [
+        { name: "Sneha Reddy", role: "Event Coordinator", email: "sneha@college.edu" },
         { name: "Vikram Singh", role: "Web Development Lead", email: "vikram@college.edu" },
-        { name: "Ananya Gupta", role: "App Development Lead", email: "ananya@college.edu" },
+        { name: "Ananya Gupta", role: "Marketing Head", email: "ananya@college.edu" },
         { name: "Rohan Kumar", role: "Design Lead", email: "rohan@college.edu" },
-        { name: "Neha Verma", role: "Technical Support", email: "neha@college.edu" },
       ],
     },
     {
-      title: "Marketing & PR Team",
+      name: "IEEE",
       members: [
-        { name: "Amit Joshi", role: "Marketing Head", email: "amit@college.edu" },
-        { name: "Pooja Iyer", role: "Social Media Lead", email: "pooja@college.edu" },
-        { name: "Karan Malhotra", role: "Content Head", email: "karan@college.edu" },
-        { name: "Divya Nair", role: "PR Coordinator", email: "divya@college.edu" },
-      ],
-    },
-    {
-      title: "Logistics & Operations",
-      members: [
-        { name: "Siddharth Rao", role: "Logistics Head", email: "siddharth@college.edu" },
-        { name: "Riya Desai", role: "Venue Coordinator", email: "riya@college.edu" },
-        { name: "Aditya Sharma", role: "Registration Lead", email: "aditya@college.edu" },
-        { name: "Kavya Menon", role: "Hospitality Head", email: "kavya@college.edu" },
+        { name: "Prof. Michael Chen", role: "Faculty Coordinator", email: "m.chen@college.edu" },
+        { name: "Amit Joshi", role: "Chairperson", email: "amit@college.edu" },
+        { name: "Pooja Iyer", role: "Vice Chairperson", email: "pooja@college.edu" },
+        { name: "Karan Malhotra", role: "Secretary", email: "karan@college.edu" },
+        { name: "Divya Nair", role: "Treasurer", email: "divya@college.edu" },
+        { name: "Siddharth Rao", role: "Technical Head", email: "siddharth@college.edu" },
+        { name: "Riya Desai", role: "Event Manager", email: "riya@college.edu" },
+        { name: "Aditya Sharma", role: "Logistics Lead", email: "aditya@college.edu" },
       ],
     },
   ];
@@ -60,16 +43,16 @@ const Team = () => {
           </p>
         </div>
 
-        {/* Team Categories */}
+        {/* Club Sections */}
         <div className="space-y-16">
-          {teamCategories.map((category, categoryIndex) => (
-            <div key={categoryIndex} className="animate-fade-in" style={{ animationDelay: `${categoryIndex * 0.1}s` }}>
+          {clubs.map((club, clubIndex) => (
+            <div key={clubIndex} className="animate-fade-in" style={{ animationDelay: `${clubIndex * 0.1}s` }}>
               <h2 className="text-3xl font-bold mb-8 text-center text-primary">
-                {category.title}
+                {club.name}
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {category.members.map((member, memberIndex) => (
+                {club.members.map((member, memberIndex) => (
                   <div
                     key={memberIndex}
                     className="bg-card rounded-lg border border-border p-6 hover:border-primary transition-all duration-300 hover:shadow-glow-cyan group"
