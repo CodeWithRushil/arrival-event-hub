@@ -5,14 +5,15 @@ const Team = () => {
     {
       name: "SIAM",
       members: [
-        { name: "Dr. Sarah Johnson", role: "Faculty Advisor", email: "sarah.j@college.edu" },
-        { name: "Rahul Sharma", role: "President", email: "rahul@college.edu" },
-        { name: "Priya Patel", role: "Vice President", email: "priya@college.edu" },
-        { name: "Arjun Mehta", role: "Technical Lead", email: "arjun@college.edu" },
-        { name: "Sneha Reddy", role: "Event Coordinator", email: "sneha@college.edu" },
-        { name: "Vikram Singh", role: "Web Development Lead", email: "vikram@college.edu" },
-        { name: "Ananya Gupta", role: "Marketing Head", email: "ananya@college.edu" },
-        { name: "Rohan Kumar", role: "Design Lead", email: "rohan@college.edu" },
+        { name: "Ritik Joshi", role: "President", email: "sarah.j@college.edu" },
+        { name: "Nandaya Vegad", role: "Vice President", email: "rahul@college.edu" },
+        { name: "Suhani Saini", role: "Secretary", email: "priya@college.edu" },
+        { name: "Sameeksha Shakya", role: "Joint Secretary", email: "arjun@college.edu" },
+        { name: "Aenansh Mittal", role: "Treasurer", email: "sneha@college.edu" },
+        { name: "Omansh Sharma", role: "Webmaster", email: "vikram@college.edu" },
+        { name: "Devansh Kalia", role: "Research Head", email: "ananya@college.edu" },
+        { name: "Vansh Soni", role: "Public Relations Head", email: "rohan@college.edu" },
+        { name: "Manya Sethi", role: "Operations Head", email: "rohan@college.edu" },
       ],
     },
     {
