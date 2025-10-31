@@ -1,5 +1,5 @@
 import { Mail, Linkedin } from "lucide-react";
-import harshit_goyal from "@/assets/Harshit_Goyal.jpg";
+import Harshit_Goyal from "@/assets/Harshit_Goyal.jpg";
 
 const Team = () => {
   const clubs = [
@@ -26,7 +26,7 @@ const Team = () => {
       email: "harshitgoyal718@gmail.com",
       linkedin: "https://www.linkedin.com/in/harshitgoyal001/",
       instagram: "https://www.instagram.com/harshitgoyal625/",
-      image: "Harshit Goyal"
+      image: "Harshit_Goyal"
     },
     {
       name: "Jayendra Singh",
