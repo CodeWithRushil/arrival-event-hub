@@ -74,7 +74,7 @@ const Home = () => {
                 <MapPin className="text-primary" size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-2">Venue</h3>
-              <p className="text-muted-foreground">JUIT</p>
+              <p className="text-muted-foreground">JUIT, Solan</p>
             </div>
 
             <div className="flex flex-col items-center text-center p-6 rounded-lg bg-card/50 backdrop-blur-sm border border-border animate-fade-in" style={{ animationDelay: '0.2s' }}>
