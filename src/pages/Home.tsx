@@ -64,7 +64,7 @@ const Home = () => {
                 <Calendar className="text-primary" size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-2">Date</h3>
-              <p className="text-muted-foreground">7 Nov to 9 Nov</p>
+              <p className="text-muted-foreground">7 Nov to 9 Nov, 2025</p>
             </div>
 
             <div className="flex flex-col items-center text-center p-6 rounded-lg bg-card/50 backdrop-blur-sm border border-border animate-fade-in" style={{ animationDelay: '0.1s' }}>
