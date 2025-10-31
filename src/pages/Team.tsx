@@ -7,7 +7,7 @@ const Team = () => {
       members: [
         { name: "Ritik Joshi", role: "President", email: "sarah.j@college.edu", image: "Ritik.JPG" },
         { name: "Nandaya Vegad", role: "Vice President", email: "rahul@college.edu", image: "Nandaya_Vegad.jpg" },
-        { name: "Suhani Saini", role: "Secretary", email: "priya@college.edu", image: "Suhani_Saini.JPG" },
+        { name: "Suhani Saini", role: "Secretary", email: "priya@college.edu", image: "Suhani_Saini.jpg" },
         { name: "Sameeksha Shakya", role: "Joint Secretary", email: "arjun@college.edu", image: "Sameeksha_Shakya.jpg" },
         { name: "Aenansh Mittal", role: "Treasurer", email: "sneha@college.edu", image: "Aenansh_Mittal.jpg" },
         { name: "Omansh Sharma", role: "Webmaster", email: "vikram@college.edu", image: "Omansh_Sharma.jpg" },
