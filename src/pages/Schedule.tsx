@@ -4,7 +4,7 @@ const Schedule = () => {
   const scheduleData = [
     {
       day: "Day 1",
-      date: "March 15, 2024",
+      date: "November 7, 2025",
       events: [
         { time: "09:00 AM", title: "Registration & Welcome", location: "Main Lobby" },
         { time: "10:00 AM", title: "Opening Ceremony", location: "Main Auditorium" },
@@ -17,7 +17,7 @@ const Schedule = () => {
     },
     {
       day: "Day 2",
-      date: "March 16, 2024",
+      date: "November 8, 2025",
       events: [
         { time: "09:00 AM", title: "Coding Competition Begins", location: "Computer Labs" },
         { time: "11:00 AM", title: "Panel Discussion: Startups", location: "Seminar Hall" },
@@ -30,7 +30,7 @@ const Schedule = () => {
     },
     {
       day: "Day 3",
-      date: "March 17, 2024",
+      date: "November 9, 2025",
       events: [
         { time: "09:00 AM", title: "Hackathon Finals", location: "Main Hall" },
         { time: "11:30 AM", title: "Guest Speaker: Industry Leader", location: "Auditorium" },
@@ -48,7 +48,7 @@ const Schedule = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-5xl md:text-6xl font-black mb-6 bg-gradient-primary bg-clip-text text-transparent" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+          <h1 className="text-5xl md:text-6xl font-black mb-6 bg-gradient-primary bg-clip-text text-transparent">
             Event Schedule
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -62,7 +62,7 @@ const Schedule = () => {
             <div key={dayIndex} className="animate-fade-in" style={{ animationDelay: `${dayIndex * 0.1}s` }}>
               {/* Day Header */}
               <div className="mb-8">
-                <h2 className="text-3xl font-bold mb-2 text-primary" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+                <h2 className="text-3xl font-bold mb-2 text-primary">
                   {day.day}
                 </h2>
                 <p className="text-muted-foreground">{day.date}</p>
@@ -75,20 +75,23 @@ const Schedule = () => {
                     key={eventIndex}
                     className="flex gap-6 p-6 rounded-lg bg-card border border-border hover:border-primary transition-all duration-300 hover:shadow-glow-cyan group"
                   >
-                    {/* Time */}
-                    <div className="flex-shrink-0 w-32">
-                      <div className="flex items-center gap-2 text-primary">
+                    {/* Event Details - Left */}
+                    <div className="flex-grow">
+                      <div className="flex items-center gap-2 text-primary mb-3">
                         <Clock size={18} />
                         <span className="font-semibold">{event.time}</span>
                       </div>
-                    </div>
-
-                    {/* Event Details */}
-                    <div className="flex-grow">
                       <h3 className="text-lg font-semibold mb-1 group-hover:text-primary transition-colors">
                         {event.title}
                       </h3>
                       <p className="text-sm text-muted-foreground">{event.location}</p>
+                    </div>
+
+                    {/* Image - Right */}
+                    <div className="flex-shrink-0 w-32 h-32 rounded-lg bg-gradient-to-br from-primary/30 via-accent/20 to-secondary/40 overflow-hidden">
+                      <div className="w-full h-full flex items-center justify-center text-primary/50">
+                        <Clock size={48} />
+                      </div>
                     </div>
                   </div>
                 ))}

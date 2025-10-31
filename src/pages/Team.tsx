@@ -52,7 +52,7 @@ const Team = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-5xl md:text-6xl font-black mb-6 bg-gradient-primary bg-clip-text text-transparent" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+          <h1 className="text-5xl md:text-6xl font-black mb-6 bg-gradient-primary bg-clip-text text-transparent">
             Our Team
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -64,7 +64,7 @@ const Team = () => {
         <div className="space-y-16">
           {teamCategories.map((category, categoryIndex) => (
             <div key={categoryIndex} className="animate-fade-in" style={{ animationDelay: `${categoryIndex * 0.1}s` }}>
-              <h2 className="text-3xl font-bold mb-8 text-center text-primary" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+              <h2 className="text-3xl font-bold mb-8 text-center text-primary">
                 {category.title}
               </h2>
 
@@ -75,8 +75,8 @@ const Team = () => {
                     className="bg-card rounded-lg border border-border p-6 hover:border-primary transition-all duration-300 hover:shadow-glow-cyan group"
                   >
                     {/* Avatar Placeholder */}
-                    <div className="w-24 h-24 rounded-full bg-gradient-primary mx-auto mb-4 flex items-center justify-center">
-                      <span className="text-3xl font-bold text-primary-foreground">
+                    <div className="w-40 h-40 rounded-full bg-gradient-primary mx-auto mb-4 flex items-center justify-center">
+                      <span className="text-4xl font-bold text-primary-foreground">
                         {member.name.split(' ').map(n => n[0]).join('')}
                       </span>
                     </div>

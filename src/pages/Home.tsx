@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import CountdownTimer from "@/components/CountdownTimer";
-import { ArrowDown, Calendar, MapPin, Users } from "lucide-react";
+import { Calendar, MapPin, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
 
@@ -52,11 +52,6 @@ const Home = () => {
               </Link>
             </div>
           </div>
-
-          {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <ArrowDown className="text-primary" size={32} />
-          </div>
         </div>
       </section>
 
@@ -79,7 +74,7 @@ const Home = () => {
                 <MapPin className="text-primary" size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-2">Venue</h3>
-              <p className="text-muted-foreground">College Main Auditorium</p>
+              <p className="text-muted-foreground">JUIT</p>
             </div>
 
             <div className="flex flex-col items-center text-center p-6 rounded-lg bg-card/50 backdrop-blur-sm border border-border animate-fade-in" style={{ animationDelay: '0.2s' }}>
@@ -87,7 +82,7 @@ const Home = () => {
                 <Users className="text-primary" size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-2">Participants</h3>
-              <p className="text-muted-foreground">500+ Expected Attendees</p>
+              <p className="text-muted-foreground">200+ Expected Attendees</p>
             </div>
           </div>
         </div>
