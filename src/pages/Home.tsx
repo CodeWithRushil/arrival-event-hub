@@ -96,39 +96,39 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { 
-                title: "HACKATHON", 
+                title: "Hackathon", 
                 desc: "A thrilling 24-hour marathon starting at 12 PM where innovation meets endurance! Turn bold ideas into real-world solutions through creativity, collaboration, and cutting-edge technology addressing modern challenges." 
               },
               { 
-                title: "CODING FACEOFF", 
+                title: "Coding Faceoff", 
                 desc: "An intense competitive programming event testing logic, speed, and problem-solving skills. Tackle progressively complex problems demanding precision, creativity, and efficiency under pressure." 
               },
               { 
-                title: "CYBER SESSION", 
+                title: "Cyber Session", 
                 desc: "Dive into cybersecurity fundamentals with this engaging workshop. Learn ethical hacking, digital forensics, and online security from experts to defend against today's evolving digital threats." 
               },
               { 
-                title: "CAPTURE THE FLAG", 
+                title: "Capture the Flag", 
                 desc: "A 12-hour cybersecurity marathon! Test your ethical hacking, cryptography, and web security skills by uncovering hidden flags and solving complex puzzles. Only the sharpest minds prevail!" 
               },
               { 
-                title: "IOT IDEATHON", 
+                title: "IOT Ideathon", 
                 desc: "Where creativity meets technology! Teams brainstorm and pitch innovative Internet of Things solutions to real-world challenges—from smart cities to sustainable tech." 
               },
               { 
-                title: "IOT SESSION", 
+                title: "IOT Session", 
                 desc: "Explore connected technology possibilities in this insightful workshop. Learn about IoT systems, sensors, and real-time applications to turn ideas into smart solutions." 
               },
               { 
-                title: "WIKIPEDIA RACE", 
+                title: "Wikipedia Race", 
                 desc: "A fast-paced competition where participants race through Wikipedia pages to reach a target topic using the fewest clicks possible. Quick thinking and clever navigation win!" 
               },
               { 
-                title: "MOVIE NIGHT", 
+                title: "Moive Night", 
                 desc: "Unwind with a cozy gathering that brings the community together through film. Enjoy a cinematic experience filled with laughter, emotion, and great company under the stars." 
               },
               { 
-                title: "CRYPTIC QUEST", 
+                title: "Cryptic Quest", 
                 desc: "Embark on an exhilarating journey through riddles, codes, and mysteries! This mind-bending challenge tests your wit and teamwork as you decode your way to the finish line." 
               },
             ].map((item, index) => (
