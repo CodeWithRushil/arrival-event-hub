@@ -17,18 +17,98 @@ const Team = () => {
       ],
     },
     {
-      name: "IEEE",
-      members: [
-        { name: "Prof. Michael Chen", role: "Faculty Coordinator", email: "m.chen@college.edu" },
-        { name: "Amit Joshi", role: "Chairperson", email: "amit@college.edu" },
-        { name: "Pooja Iyer", role: "Vice Chairperson", email: "pooja@college.edu" },
-        { name: "Karan Malhotra", role: "Secretary", email: "karan@college.edu" },
-        { name: "Divya Nair", role: "Treasurer", email: "divya@college.edu" },
-        { name: "Siddharth Rao", role: "Technical Head", email: "siddharth@college.edu" },
-        { name: "Riya Desai", role: "Event Manager", email: "riya@college.edu" },
-        { name: "Aditya Sharma", role: "Logistics Lead", email: "aditya@college.edu" },
-      ],
+  name: "IEEE",
+  members: [
+    {
+      name: "Harshit Goyal",
+      role: "Chairperson",
+      email: "harshitgoyal718@gmail.com",
+      linkedin: "https://www.linkedin.com/in/harshitgoyal001/",
+      instagram: "https://www.instagram.com/harshitgoyal625/",
+      image: "Harshit Goyal"
     },
+    {
+      name: "Jayendra Singh",
+      role: "Vice Chairperson",
+      email: "jay290120@gmail.com",
+      linkedin: "https://www.linkedin.com/in/jayendrasingh29/",
+      instagram: "https://www.instagram.com/jayendra_k98/",
+      image: "Jayendra Singh"
+    },
+    {
+      name: "Nandini Singh",
+      role: "Secretary",
+      email: "nandinisingh3563@gmail.com",
+      linkedin: "https://www.linkedin.com/in/nandini-singh-b258062b0",
+      instagram: "https://www.instagram.com/nandinisingh004?igsh=MTNmbjA0OWkxdTU5cg==",
+      image: "Nandini Singh"
+    },
+    {
+      name: "Shubham Nagpal",
+      role: "Treasurer",
+      email: "shubhamnagpal623@gmail.com",
+      linkedin: "https://www.linkedin.com/in/shubham-nagpal-691941309/",
+      instagram: "https://www.instagram.com/shubham_nagpal__/?hl=en",
+      image: "Shubham Nagpal"
+    },
+    {
+      name: "Aaditya Shekhar Singh",
+      role: "Programming & Public Relation Head",
+      email: "aadityashekhar20048@gmail.com",
+      linkedin: "https://www.linkedin.com/in/aaditya-shekhar-singh-038612307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      instagram: "https://www.instagram.com/aaditya.shekhar.singh?igsh=MTdhY3d0dzY4bDc2&utm_source=qr",
+      image: "Aaditya Shekhar Singh"
+    },
+    {
+      name: "Anwesh Sinha",
+      role: "Programming & Public Relation Head",
+      email: "anweshsinha2015@gmail.com",
+      linkedin: "https://www.linkedin.com/in/anwesh-sinha1/",
+      instagram: "https://www.instagram.com/_anvi.96_/#",
+      image: "Anwesh Sinha"
+    },
+    {
+      name: "Keshav Khandelwal",
+      role: "SIGHT Chairperson, Media and Publicity Head",
+      email: "kkhandelwal4999@gmail.com",
+      linkedin: "https://www.linkedin.com/in/khandelwal005/",
+      instagram: "https://www.instagram.com/_mr._khandelwal/",
+      image: "Keshav Khandelwal"
+    },
+    {
+      name: "Prakhar Kulshrestha",
+      role: "SPS Chairperson",
+      email: "prakharkul27@gmail.com",
+      linkedin: "https://www.linkedin.com/in/prakhar-kulshrestha-461461293",
+      instagram: "https://www.instagram.com/_prakhar2712_?igsh=Z2p4YXhsZHc0bjBv",
+      image: "Prakhar Kulshrestha"
+    },
+    {
+      name: "Shruti Sharma",
+      role: "WIE Chairperson & Technical Head",
+      email: "shrutisharma132005@gmail.com",
+      linkedin: "https://www.linkedin.com/in/shruti-sharma-180286295/",
+      instagram: "https://www.instagram.com/_shrugar/",
+      image: "Shruti Sharma"
+    },
+    {
+      name: "Edann",
+      role: "WIE Secretary",
+      email: "edannmehra@gmail.com",
+      linkedin: "https://www.linkedin.com/in/edann-mehra-27a706319/",
+      instagram: "https://www.instagram.com/edann_33266/",
+      image: "Edann"
+    },
+    {
+      name: "Tania Mehta",
+      role: "SPS & SIGHT Secretary",
+      email: "taniamehta305@gmail.com",
+      linkedin: "https://www.linkedin.com/in/taniamehta06/",
+      instagram: "https://www.instagram.com/t.a.n.i.a_.3712/",
+      image: "Tania Mehta"
+    }
+  ]
+}
   ];
 
   return (
