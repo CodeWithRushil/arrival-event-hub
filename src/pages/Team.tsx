@@ -5,14 +5,14 @@ const Team = () => {
     {
       name: "SIAM",
       members: [
-        { name: "Ritik Joshi", role: "President", email: "sarah.j@college.edu", imag: "Harshit_Goyal.JPG" },
+        { name: "Ritik Joshi", role: "President", email: "sarah.j@college.edu", image: "Ritik.JPG" },
         { name: "Nandaya Vegad", role: "Vice President", email: "rahul@college.edu", image: "Nandaya_Vegad.jpg" },
-        { name: "Suhani Saini", role: "Secretary", email: "priya@college.edu", image: "Suhani_Saini.jpg" },
+        { name: "Suhani Saini", role: "Secretary", email: "priya@college.edu", image: "Suhani_Saini.JPG" },
         { name: "Sameeksha Shakya", role: "Joint Secretary", email: "arjun@college.edu", image: "Sameeksha_Shakya.jpg" },
         { name: "Aenansh Mittal", role: "Treasurer", email: "sneha@college.edu", image: "Aenansh_Mittal.jpg" },
         { name: "Omansh Sharma", role: "Webmaster", email: "vikram@college.edu", image: "Omansh_Sharma.jpg" },
-        { name: "Devansh Kalia", role: "Research Head", email: "ananya@college.edu", imag: "Harshit_Goyal.JPG" },
-        { name: "Vansh Soni", role: "Public Relations Head", email: "rohan@college.edu", imag: "Harshit_Goyal.JPG" },
+        { name: "Devansh Kalia", role: "Research Head", email: "ananya@college.edu", image: "Devansh.JPG" },
+        { name: "Vansh Soni", role: "Public Relations Head", email: "rohan@college.edu", image: "Vansh.JPG" },
         { name: "Manya Sethi", role: "Operations Head", email: "rohan@college.edu", image: "Manya_Sethi.jpg" },
       ],
     },
@@ -57,7 +57,7 @@ const Team = () => {
       email: "aadityashekhar20048@gmail.com",
       linkedin: "https://www.linkedin.com/in/aaditya-shekhar-singh-038612307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       instagram: "https://www.instagram.com/aaditya.shekhar.singh?igsh=MTdhY3d0dzY4bDc2&utm_source=qr",
-      imag: "Aaditya Shekhar Singh"
+      image: "Aaditya_Singh.jpg"
     },
     {
       name: "Anwesh Sinha",
@@ -65,7 +65,7 @@ const Team = () => {
       email: "anweshsinha2015@gmail.com",
       linkedin: "https://www.linkedin.com/in/anwesh-sinha1/",
       instagram: "https://www.instagram.com/_anvi.96_/#",
-      imag: "Anwesh Sinha"
+      image: "Anwesh_Sinha.jpg"
     },
     {
       name: "Keshav Khandelwal",
@@ -97,7 +97,7 @@ const Team = () => {
       email: "edannmehra@gmail.com",
       linkedin: "https://www.linkedin.com/in/edann-mehra-27a706319/",
       instagram: "https://www.instagram.com/edann_33266/",
-      imag: "Edann"
+      image: "Edann.jpg"
     },
     {
       name: "Tania Mehta",
