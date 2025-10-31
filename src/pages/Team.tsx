@@ -1,5 +1,4 @@
 import { Mail, Linkedin } from "lucide-react";
-import Harshit_Goyal from "@/assets/Harshit_Goyal.jpg";
 
 const Team = () => {
   const clubs = [
@@ -142,7 +141,7 @@ const Team = () => {
                     <div className="w-40 h-40 rounded-full bg-gradient-primary mx-auto mb-4 flex items-center justify-center overflow-hidden">
   {member.image ? (
     <img
-      src={member.image}
+      src={`@/assets/${member.image}.jpg`}
       alt={member.name}
       className="w-full h-full object-cover"
     />
