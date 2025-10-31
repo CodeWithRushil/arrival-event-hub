@@ -25,7 +25,7 @@ const Team = () => {
       email: "harshitgoyal718@gmail.com",
       linkedin: "https://www.linkedin.com/in/harshitgoyal001/",
       instagram: "https://www.instagram.com/harshitgoyal625/",
-      image: "Harshit_Goyal"
+      image: "Harshit_Goyal.JPG"
     },
     {
       name: "Jayendra Singh",
@@ -41,7 +41,7 @@ const Team = () => {
       email: "nandinisingh3563@gmail.com",
       linkedin: "https://www.linkedin.com/in/nandini-singh-b258062b0",
       instagram: "https://www.instagram.com/nandinisingh004?igsh=MTNmbjA0OWkxdTU5cg==",
-      imag: "Nandini Singh"
+      image: "Nandini_Singh.jpg"
     },
     {
       name: "Shubham Nagpal",
@@ -141,7 +141,7 @@ const Team = () => {
                     <div className="w-40 h-40 rounded-full bg-gradient-primary mx-auto mb-4 flex items-center justify-center overflow-hidden">
   {member.image ? (
     <img
-      src={`@/assets/${member.image}.jpg`}
+      src={`@/assets/${member.image}`}
       alt={member.name}
       className="w-full h-full object-cover"
     />
