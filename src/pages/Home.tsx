@@ -124,13 +124,14 @@ const Home = () => {
                 desc: "A fast-paced competition where participants race through Wikipedia pages to reach a target topic using the fewest clicks possible. Quick thinking and clever navigation win!" 
               },
               { 
-                title: "Moive Night", 
-                desc: "Unwind with a cozy gathering that brings the community together through film. Enjoy a cinematic experience filled with laughter, emotion, and great company under the stars." 
-              },
-              { 
                 title: "Cryptic Quest", 
                 desc: "Embark on an exhilarating journey through riddles, codes, and mysteries! This mind-bending challenge tests your wit and teamwork as you decode your way to the finish line." 
               },
+              { 
+                title: "Jamming Night", 
+                desc: "End the day on a high note with Jamming Night, where music, rhythm, and energy come alive! Join fellow students for a night of live performances & spontaneous melodies!"
+              },
+              
             ].map((item, index) => (
               <div
                 key={index}
