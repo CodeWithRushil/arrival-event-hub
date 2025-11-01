@@ -160,25 +160,7 @@ const Team = () => {
                       <h3 className="text-lg font-semibold mb-1 group-hover:text-primary transition-colors">
                         {member.name}
                       </h3>
-                      <p className="text-sm text-muted-foreground mb-4">{member.role}</p>
-
-                      {/* Contact Links */}
-                      <div className="flex gap-3 justify-center">
-                        <a
-                          href={`mailto:${member.email}`}
-                          className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
-                          aria-label={`Email ${member.name}`}
-                        >
-                          <Mail size={16} />
-                        </a>
-                        <a
-                          href="#"
-                          className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
-                          aria-label={`LinkedIn profile of ${member.name}`}
-                        >
-                          <Linkedin size={16} />
-                        </a>
-                      </div>
+                      <p className="text-sm text-muted-foreground mb-1">{member.role}</p>
                     </div>
                   </div>
                 ))}
