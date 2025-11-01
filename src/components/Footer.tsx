@@ -1,8 +1,6 @@
 import React from "react";
 import ieee from "/posters/logos/ieee.png";
 import siam from "/posters/logos/siam.png";
-import jaypee from "/posters/logos/jaypee.png";
-import ignited from "/posters/logos/ignited.png";
 
 const Footer = () => {
   return (
@@ -58,7 +56,7 @@ const Footer = () => {
 
         {/* Right: Club Logos */}
         <div className="flex flex-wrap justify-center md:justify-end gap-5">
-          {[ieee, siam, jaypee, ignited].map((logo, i) => (
+          {[ieee, siam].map((logo, i) => (
             <img
               key={i}
               src={logo}
