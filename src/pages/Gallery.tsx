@@ -4,12 +4,59 @@ import { X } from "lucide-react";
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
-  // Placeholder gallery items
-  const galleryItems = Array.from({ length: 12 }, (_, i) => ({
-    id: i + 1,
-    title: `Event Moment ${i + 1}`,
-    category: i % 3 === 0 ? "Workshop" : i % 3 === 1 ? "Competition" : "Networking",
-  }));
+  // Gallery items (each with an image URL)
+  const galleryItems = [
+    {
+      id: 1,
+      title: "Arrival",
+      image: "/posters/arrival.png",
+    },
+    {
+      id: 2,
+      title: "Cryptic Quest",
+      image: "/posters/cryptic.png",
+    },
+    {
+      id: 3,
+      title: "Capture the Flag",
+      image: "/posters/ctf.png",
+    },
+    {
+      id: 4,
+      title: "Cyber Session",
+      image: "/posters/cyber.png",
+    },
+    {
+      id: 5,
+      title: "Coding Face Off",
+      image: "/posters/faceOff.png",
+    },
+    {
+      id: 6,
+      title: "Jamming Night",
+      image: "/posters/jamming.png",
+    },
+    {
+      id: 7,
+      title: "Mesh Minds",
+      image: "/posters/mesh.png",
+    },
+    {
+      id: 8,
+      title: "Innovate with Nvidia",
+      image: "/posters/nvidia.png",
+    },
+    {
+      id: 9,
+      title: "Speaker Session",
+      image: "/posters/speaker.png",
+    },
+    {
+      id: 10,
+      title: "Wikipedia Race",
+      image: "/posters/wiki.png",
+    },
+  ];
 
   return (
     <div className="min-h-screen pt-24 pb-12">
@@ -24,18 +71,6 @@ const Gallery = () => {
           </p>
         </div>
 
-        {/* Filter Tabs */}
-        <div className="flex flex-wrap gap-4 justify-center mb-12">
-          {["All", "Workshop", "Competition", "Networking"].map((filter, index) => (
-            <button
-              key={index}
-              className="px-6 py-2 rounded-full bg-card border border-border hover:border-primary hover:text-primary transition-all duration-300"
-            >
-              {filter}
-            </button>
-          ))}
-        </div>
-
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {galleryItems.map((item, index) => (
@@ -45,13 +80,18 @@ const Gallery = () => {
               style={{ animationDelay: `${index * 0.05}s` }}
               onClick={() => setSelectedImage(index)}
             >
-              {/* Placeholder gradient background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-accent/20 to-secondary/40" />
-              
+              {/* Image */}
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-out"
+              />
+
               {/* Overlay on hover */}
-              <div className="absolute inset-0 bg-background/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4">
-                <h3 className="text-lg font-semibold mb-2 text-center">{item.title}</h3>
-                <span className="text-sm text-primary">{item.category}</span>
+              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+                <h3 className="text-lg font-semibold mb-1 text-center">
+                  {item.title}
+                </h3>
               </div>
             </div>
           ))}
@@ -60,38 +100,37 @@ const Gallery = () => {
         {/* Lightbox Modal */}
         {selectedImage !== null && (
           <div
-            className="fixed inset-0 z-50 bg-background/95 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-in"
+            className="fixed inset-0 z-50 bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-in"
             onClick={() => setSelectedImage(null)}
           >
             <button
-              className="absolute top-4 right-4 w-10 h-10 rounded-full bg-card border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
-              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center hover:bg-white/20 text-white transition-colors"
+              onClick={(e) => {
+                e.stopPropagation();
+                setSelectedImage(null);
+              }}
               aria-label="Close lightbox"
             >
               <X size={20} />
             </button>
 
-            <div className="max-w-5xl w-full aspect-video rounded-lg overflow-hidden">
-              <div className="w-full h-full bg-gradient-to-br from-primary/40 via-accent/30 to-secondary/50 flex items-center justify-center">
-                <div className="text-center">
-                  <h3 className="text-2xl font-bold mb-2">
-                    {galleryItems[selectedImage].title}
-                  </h3>
-                  <p className="text-muted-foreground">
-                    {galleryItems[selectedImage].category}
-                  </p>
-                </div>
+            <div
+              className="max-w-5xl w-full rounded-lg overflow-hidden shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <img
+                src={galleryItems[selectedImage].image}
+                alt={galleryItems[selectedImage].title}
+                className="w-full h-auto object-contain"
+              />
+              <div className="p-4 text-center text-white bg-black/70">
+                <h3 className="text-2xl font-bold mb-1">
+                  {galleryItems[selectedImage].title}
+                </h3>
               </div>
             </div>
           </div>
         )}
-
-        {/* Load More Button */}
-        <div className="mt-12 text-center">
-          <button className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity">
-            Load More Photos
-          </button>
-        </div>
       </div>
     </div>
   );

@@ -1,60 +1,77 @@
-import { Link } from "react-router-dom";
-import { Mail, MapPin, Phone } from "lucide-react";
+import React from "react";
+import ieee from "/posters/logos/ieee.png";
+import siam from "/posters/logos/siam.png";
+import jaypee from "/posters/logos/jaypee.png";
+import ignited from "/posters/logos/ignited.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary/50 backdrop-blur-sm border-t border-border mt-20">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* About */}
-          <div>
-            <h3 className="text-xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent" style={{ fontFamily: 'Orbitron, sans-serif' }}>
-              ARRIVAL
-            </h3>
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              Join us for an unforgettable college event experience with exciting competitions, workshops, and networking opportunities.
+    <footer className="bg-secondary/50 backdrop-blur-sm border-t border-border text-foreground py-6">
+      {/* Top Section */}
+      <div className="container mx-auto px-6 flex flex-col md:grid md:grid-cols-3 items-center justify-between gap-6 text-center md:text-left">
+        {/* Left: Location */}
+        <div className="text-sm text-muted-foreground">
+          <p className="font-semibold text-foreground">📍 JUIT, Waknaghat</p>
+          <a
+            href="https://maps.google.com/?q=JUIT+Waknaghat+HP"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-primary transition-colors"
+          >
+            View on Google Maps
+          </a>
+        </div>
+
+        {/* Center: Main Info */}
+        <div className="text-center mx-auto">
+          <h3 className="text-lg font-bold bg-gradient-primary bg-clip-text text-transparent">
+            ARRIVAL - IEEE JUIT SB x SIAM JUIT
+          </h3>
+          <p className="text-xs text-muted-foreground">
+            Bringing technology, innovation & collaboration together.
+          </p>
+
+          {/* Contact Info */}
+          <div className="text-xs mt-2 text-muted-foreground space-y-1">
+            <p>
+              <strong>IEEE:</strong>{" "}
+              <a
+                href="mailto:ieee.juit@juitsolan.in"
+                className="hover:text-primary"
+              >
+                ieee.juit@juitsolan.in
+              </a>{" "}
+              | +91 6239 377427 | Harshit Goyal
+            </p>
+            <p>
+              <strong>SIAM:</strong>{" "}
+              <a
+                href="mailto:siam.juit@juitsolan.in"
+                className="hover:text-primary"
+              >
+                siam@juitsolan.in
+              </a>{" "}
+              | +91 70175 72929 | Ritik Joshi
             </p>
           </div>
-
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <div className="space-y-2">
-              {["Home", "About", "Schedule", "Team", "Gallery"].map((link) => (
-                <Link
-                  key={link}
-                  to={link === "Home" ? "/" : `/${link.toLowerCase()}`}
-                  className="block text-muted-foreground hover:text-primary transition-colors text-sm"
-                >
-                  {link}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
-            <div className="space-y-3">
-              <div className="flex items-start gap-2 text-sm text-muted-foreground">
-                <MapPin size={16} className="mt-1 text-primary flex-shrink-0" />
-                <span>College Campus, City, State</span>
-              </div>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Mail size={16} className="text-primary flex-shrink-0" />
-                <span>arrival@college.edu</span>
-              </div>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Phone size={16} className="text-primary flex-shrink-0" />
-                <span>+1 (555) 123-4567</span>
-              </div>
-            </div>
-          </div>
         </div>
 
-        <div className="border-t border-border mt-8 pt-6 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} ARRIVAL. All rights reserved.</p>
+        {/* Right: Club Logos */}
+        <div className="flex flex-wrap justify-center md:justify-end gap-5">
+          {[ieee, siam, jaypee, ignited].map((logo, i) => (
+            <img
+              key={i}
+              src={logo}
+              alt="Club logo"
+              className="w-[80px] h-[30px] opacity-80 hover:opacity-100 transition"
+            />
+          ))}
         </div>
+      </div>
+
+      {/* Bottom Text */}
+      <div className="text-center text-xs text-muted-foreground mt-4 border-t border-border pt-3">
+        © {new Date().getFullYear()} ARRIVAL - IEEE JUIT SB x SIAM JUIT. All rights reserved.
       </div>
     </footer>
   );

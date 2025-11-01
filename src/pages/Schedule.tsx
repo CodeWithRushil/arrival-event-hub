@@ -6,30 +6,90 @@ const Schedule = () => {
       day: "Day 1",
       date: "November 7, 2025",
       events: [
-        { time: "02:00 PM", title: "Inauguration", location: "Main Lobby" },
-        { time: "02:00 PM", title: "Speaker Session", location: "Main Auditorium" },
-        { time: "05:00 PM", title: "Coding Face Off", location: "Main Auditorium" },
-        { time: "07:00 PM", title: "Jamming Night", location: "Cafeteria" },
+        {
+          time: "02:00 PM",
+          title: "Inauguration",
+          location: "Main Lobby",
+          image: "/posters/arrival.png",
+        },
+        {
+          time: "02:00 PM",
+          title: "Speaker Session",
+          location: "Main Auditorium",
+          image: "/posters/speaker.png",
+        },
+        {
+          time: "05:00 PM",
+          title: "Coding Face Off",
+          location: "Main Auditorium",
+          image: "/posters/faceOff.png",
+        },
+        {
+          time: "07:00 PM",
+          title: "Jamming Night",
+          location: "Cafeteria",
+          image: "/posters/jamming.png",
+        },
       ],
     },
     {
       day: "Day 2",
       date: "November 8, 2025",
       events: [
-        { time: "11:00 AM", title: "Cyber Session", location: "Computer Labs" },
-        { time: "02:00 PM", title: "Mesh Minds: Startups", location: "Seminar Hall" },
-        { time: "02:00 PM", title: "Capture the Flag", location: "Cafeteria" },
-        { time: "02:00 PM", title: "Wikipedia Race", location: "Lab 201" },
-        { time: "05:30 PM", title: "Innovate with Nvidia", location: "Exhibition Hall" },
+        {
+          time: "11:00 AM",
+          title: "Cyber Session",
+          location: "Computer Labs",
+          image: "/posters/cyber.png",
+        },
+        {
+          time: "02:00 PM",
+          title: "Mesh Minds: Startups",
+          location: "Seminar Hall",
+          image: "/posters/mesh.png",
+        },
+        {
+          time: "02:00 PM",
+          title: "Capture the Flag",
+          location: "Cafeteria",
+          image: "/posters/ctf.png",
+        },
+        {
+          time: "02:00 PM",
+          title: "Wikipedia Race",
+          location: "Lab 201",
+          image: "/posters/wiki.png",
+        },
+        {
+          time: "05:30 PM",
+          title: "Innovate with Nvidia",
+          location: "Exhibition Hall",
+          image: "/posters/nvidia.png",
+        },
       ],
     },
     {
       day: "Day 3",
       date: "November 9, 2025",
       events: [
-        { time: "01:30 PM", title: "Innovate with Nvidia Concludes", location: "Main Hall" },
-        { time: "02:00 PM", title: "Cryptic Quest", location: "Auditorium" },
-        { time: "05:30 PM", title: "Closing Ceremony", location: "Cafeteria" },
+        {
+          time: "01:30 PM",
+          title: "Innovate with Nvidia Concludes",
+          location: "Main Hall",
+          image: "/posters/nvidia.png",
+        },
+        {
+          time: "02:00 PM",
+          title: "Cryptic Quest",
+          location: "Auditorium",
+          image: "/posters/cryptic.png",
+        },
+        {
+          time: "05:30 PM",
+          title: "Closing Ceremony",
+          location: "Cafeteria",
+          image: "/posters/arrival.png",
+        },
       ],
     },
   ];
@@ -50,7 +110,11 @@ const Schedule = () => {
         {/* Schedule Timeline */}
         <div className="max-w-5xl mx-auto space-y-12">
           {scheduleData.map((day, dayIndex) => (
-            <div key={dayIndex} className="animate-fade-in" style={{ animationDelay: `${dayIndex * 0.1}s` }}>
+            <div
+              key={dayIndex}
+              className="animate-fade-in"
+              style={{ animationDelay: `${dayIndex * 0.1}s` }}
+            >
               {/* Day Header */}
               <div className="mb-8">
                 <h2 className="text-3xl font-bold mb-2 text-primary">
@@ -70,19 +134,25 @@ const Schedule = () => {
                     <div className="flex-grow">
                       <div className="flex items-center gap-2 text-primary mb-3">
                         <Clock size={18} />
-                        <span className="font-semibold">{event.time}</span>
+                        <span className="font-semibold text-xl">
+                          {event.time}
+                        </span>
                       </div>
-                      <h3 className="text-lg font-semibold mb-1 group-hover:text-primary transition-colors">
+                      <h3 className="text-3xl font-semibold mb-1 group-hover:text-primary transition-colors">
                         {event.title}
                       </h3>
-                      <p className="text-sm text-muted-foreground">{event.location}</p>
+                      <p className="text-xl text-muted-foreground">
+                        {event.location}
+                      </p>
                     </div>
 
                     {/* Image - Right */}
-                    <div className="flex-shrink-0 w-32 h-32 rounded-lg bg-gradient-to-br from-primary/30 via-accent/20 to-secondary/40 overflow-hidden">
-                      <div className="w-full h-full flex items-center justify-center text-primary/50">
-                        <Clock size={48} />
-                      </div>
+                    <div className="flex-shrink-0 w-40 aspect-[1/1.41] rounded-lg overflow-hidden shadow-md">
+                      <img
+                        src={event.image}
+                        alt="Dynamic image"
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                   </div>
                 ))}
@@ -100,8 +170,18 @@ const Schedule = () => {
             <p className="text-primary-foreground/80 mb-6">
               Get the complete event schedule with all details
             </p>
-            <button className="px-6 py-3 bg-background text-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity">
-              Download PDF
+            <button
+              onClick={() => {
+                const link = document.createElement("a");
+                link.href = "/posters/itinerary.png";
+                link.download = "Arrival.png";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+              className="px-6 py-3 bg-background text-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity"
+            >
+              Download
             </button>
           </div>
         </div>

@@ -93,21 +93,21 @@ const About = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="animate-fade-in">
               <div className="text-4xl md:text-5xl font-black mb-2 text-primary-foreground">
-                500+
+                200+
               </div>
               <div className="text-primary-foreground/80">Participants</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
               <div className="text-4xl md:text-5xl font-black mb-2 text-primary-foreground">
-                20+
+                10+
               </div>
               <div className="text-primary-foreground/80">Events</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <div className="text-4xl md:text-5xl font-black mb-2 text-primary-foreground">
-                15+
+                ₹ 40,000+
               </div>
-              <div className="text-primary-foreground/80">Speakers</div>
+              <div className="text-primary-foreground/80">Prize Pool</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
               <div className="text-4xl md:text-5xl font-black mb-2 text-primary-foreground">
