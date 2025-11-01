@@ -84,6 +84,14 @@ const Team = () => {
       image: "Prakhar_Kulshrestha.jpg"
     },
     {
+      name: "Tania Mehta",
+      role: "SPS & SIGHT Secretary",
+      email: "taniamehta305@gmail.com",
+      linkedin: "https://www.linkedin.com/in/taniamehta06/",
+      instagram: "https://www.instagram.com/t.a.n.i.a_.3712/",
+      image: "Tania_Mehta.png"
+    },
+    {
       name: "Shruti Sharma",
       role: "WIE Chairperson & Technical Head",
       email: "shrutisharma132005@gmail.com",
@@ -99,14 +107,6 @@ const Team = () => {
       instagram: "https://www.instagram.com/edann_33266/",
       image: "Edann.jpg"
     },
-    {
-      name: "Tania Mehta",
-      role: "SPS & SIGHT Secretary",
-      email: "taniamehta305@gmail.com",
-      linkedin: "https://www.linkedin.com/in/taniamehta06/",
-      instagram: "https://www.instagram.com/t.a.n.i.a_.3712/",
-      image: "Tania_Mehta.png"
-    }
   ]
 }
   ];
