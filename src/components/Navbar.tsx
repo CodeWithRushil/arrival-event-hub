@@ -42,8 +42,17 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Button variant="default" size="sm" className="bg-primary text-primary-foreground hover:opacity-90">
-              Register Now
+            <Button
+              variant="default"
+              size="sm"
+              className="bg-primary text-primary-foreground hover:opacity-90"
+            >
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeblUa_w8lcYjzc6srKElkqmBC0eA6uJhcoB89Aq9qXX2n_Rg/viewform"
+                target="_blank"
+              >
+                Register Now
+              </a>
             </Button>
           </div>
 
@@ -72,7 +81,11 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Button variant="default" size="sm" className="w-full bg-primary text-primary-foreground">
+            <Button
+              variant="default"
+              size="sm"
+              className="w-full bg-primary text-primary-foreground"
+            >
               Register Now
             </Button>
           </div>

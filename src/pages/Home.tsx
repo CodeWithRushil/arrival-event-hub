@@ -6,7 +6,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const Home = () => {
   // Set event date to November 7, 2025
-  const eventDate = new Date('2025-11-07T00:00:00');
+  const eventDate = new Date("2025-11-07T00:00:00");
 
   return (
     <div className="min-h-screen">
@@ -42,8 +42,16 @@ const Home = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:opacity-90 shadow-glow-cyan animate-pulse-glow">
-                Register Now
+              <Button
+                size="lg"
+                className="bg-primary text-primary-foreground hover:opacity-90 shadow-glow-cyan animate-pulse-glow"
+              >
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeblUa_w8lcYjzc6srKElkqmBC0eA6uJhcoB89Aq9qXX2n_Rg/viewform"
+                  target="_blank"
+                >
+                  Register Now
+                </a>
               </Button>
               <Link to="/about">
                 <Button size="lg" variant="secondary">
@@ -67,7 +75,10 @@ const Home = () => {
               <p className="text-muted-foreground">7 Nov to 9 Nov, 2025</p>
             </div>
 
-            <div className="flex flex-col items-center text-center p-6 rounded-lg bg-card/50 backdrop-blur-sm border border-border animate-fade-in" style={{ animationDelay: '0.1s' }}>
+            <div
+              className="flex flex-col items-center text-center p-6 rounded-lg bg-card/50 backdrop-blur-sm border border-border animate-fade-in"
+              style={{ animationDelay: "0.1s" }}
+            >
               <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-4">
                 <MapPin className="text-primary" size={32} />
               </div>
@@ -75,7 +86,10 @@ const Home = () => {
               <p className="text-muted-foreground">JUIT, Solan</p>
             </div>
 
-            <div className="flex flex-col items-center text-center p-6 rounded-lg bg-card/50 backdrop-blur-sm border border-border animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <div
+              className="flex flex-col items-center text-center p-6 rounded-lg bg-card/50 backdrop-blur-sm border border-border animate-fade-in"
+              style={{ animationDelay: "0.2s" }}
+            >
               <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-4">
                 <Users className="text-primary" size={32} />
               </div>
@@ -95,50 +109,51 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { 
-                title: "Hackathon", 
-                desc: "A thrilling 24-hour marathon starting at 12 PM where innovation meets endurance! Turn bold ideas into real-world solutions through creativity, collaboration, and cutting-edge technology addressing modern challenges." 
+              {
+                title: "Hackathon",
+                desc: "A thrilling 24-hour marathon starting at 12 PM where innovation meets endurance! Turn bold ideas into real-world solutions through creativity, collaboration, and cutting-edge technology addressing modern challenges.",
               },
-              { 
-                title: "Coding Faceoff", 
-                desc: "An intense competitive programming event testing logic, speed, and problem-solving skills. Tackle progressively complex problems demanding precision, creativity, and efficiency under pressure." 
+              {
+                title: "Coding Faceoff",
+                desc: "An intense competitive programming event testing logic, speed, and problem-solving skills. Tackle progressively complex problems demanding precision, creativity, and efficiency under pressure.",
               },
-              { 
-                title: "Cyber Session", 
-                desc: "Dive into cybersecurity fundamentals with this engaging workshop. Learn ethical hacking, digital forensics, and online security from experts to defend against today's evolving digital threats." 
+              {
+                title: "Cyber Session",
+                desc: "Dive into cybersecurity fundamentals with this engaging workshop. Learn ethical hacking, digital forensics, and online security from experts to defend against today's evolving digital threats.",
               },
-              { 
-                title: "Capture the Flag", 
-                desc: "A 12-hour cybersecurity marathon! Test your ethical hacking, cryptography, and web security skills by uncovering hidden flags and solving complex puzzles. Only the sharpest minds prevail!" 
+              {
+                title: "Capture the Flag",
+                desc: "A 12-hour cybersecurity marathon! Test your ethical hacking, cryptography, and web security skills by uncovering hidden flags and solving complex puzzles. Only the sharpest minds prevail!",
               },
-              { 
-                title: "IOT Ideathon", 
-                desc: "Where creativity meets technology! Teams brainstorm and pitch innovative Internet of Things solutions to real-world challenges—from smart cities to sustainable tech." 
+              {
+                title: "IOT Ideathon",
+                desc: "Where creativity meets technology! Teams brainstorm and pitch innovative Internet of Things solutions to real-world challenges—from smart cities to sustainable tech.",
               },
-              { 
-                title: "IOT Session", 
-                desc: "Explore connected technology possibilities in this insightful workshop. Learn about IoT systems, sensors, and real-time applications to turn ideas into smart solutions." 
+              {
+                title: "IOT Session",
+                desc: "Explore connected technology possibilities in this insightful workshop. Learn about IoT systems, sensors, and real-time applications to turn ideas into smart solutions.",
               },
-              { 
-                title: "Wikipedia Race", 
-                desc: "A fast-paced competition where participants race through Wikipedia pages to reach a target topic using the fewest clicks possible. Quick thinking and clever navigation win!" 
+              {
+                title: "Wikipedia Race",
+                desc: "A fast-paced competition where participants race through Wikipedia pages to reach a target topic using the fewest clicks possible. Quick thinking and clever navigation win!",
               },
-              { 
-                title: "Cryptic Quest", 
-                desc: "Embark on an exhilarating journey through riddles, codes, and mysteries! This mind-bending challenge tests your wit and teamwork as you decode your way to the finish line." 
+              {
+                title: "Cryptic Quest",
+                desc: "Embark on an exhilarating journey through riddles, codes, and mysteries! This mind-bending challenge tests your wit and teamwork as you decode your way to the finish line.",
               },
-              { 
-                title: "Jamming Night", 
-                desc: "End the day on a high note with Jamming Night, where music, rhythm, and energy come alive! Join fellow students for a night of live performances & spontaneous melodies!"
+              {
+                title: "Jamming Night",
+                desc: "End the day on a high note with Jamming Night, where music, rhythm, and energy come alive! Join fellow students for a night of live performances & spontaneous melodies!",
               },
-              
             ].map((item, index) => (
               <div
                 key={index}
                 className="p-6 rounded-lg bg-card border border-border hover:border-primary transition-all duration-300 hover:shadow-glow-cyan animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <h3 className="text-xl font-semibold mb-3 text-primary">{item.title}</h3>
+                <h3 className="text-xl font-semibold mb-3 text-primary">
+                  {item.title}
+                </h3>
                 <p className="text-muted-foreground">{item.desc}</p>
               </div>
             ))}
