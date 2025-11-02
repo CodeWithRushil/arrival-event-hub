@@ -8,53 +8,63 @@ const Gallery = () => {
   const galleryItems = [
     {
       id: 1,
-      title: "Arrival",
-      image: "/posters/arrival.png",
+      title: "Auctionomics",
+      image: "/gallery/1.jpg",
     },
     {
       id: 2,
-      title: "Cryptic Quest",
-      image: "/posters/cryptic.png",
+      title: "Auctionomics",
+      image: "/gallery/2.jpg",
     },
     {
       id: 3,
-      title: "Capture the Flag",
-      image: "/posters/ctf.png",
+      title: "Auctionomics",
+      image: "/gallery/3.jpg",
     },
     {
       id: 4,
-      title: "Cyber Session",
-      image: "/posters/cyber.png",
+      title: "Auctionomics",
+      image: "/gallery/4.jpg",
     },
     {
       id: 5,
-      title: "Coding Face Off",
-      image: "/posters/faceOff.png",
+      title: "Council",
+      image: "/gallery/5.jpg",
     },
     {
       id: 6,
-      title: "Jamming Night",
-      image: "/posters/jamming.png",
+      title: "Winners of Auctionomics",
+      image: "/gallery/6.jpg",
     },
     {
       id: 7,
-      title: "Mesh Minds",
-      image: "/posters/mesh.png",
+      title: "MatLab Session",
+      image: "/gallery/7.jpg",
     },
     {
       id: 8,
-      title: "Innovate with Nvidia",
-      image: "/posters/nvidia.png",
+      title: "MatLab Session",
+      image: "/gallery/8.jpg",
     },
     {
       id: 9,
-      title: "Speaker Session",
-      image: "/posters/speaker.png",
+      title: "Dr. Mahesh",
+      image: "/gallery/9.jpg",
     },
     {
       id: 10,
-      title: "Wikipedia Race",
-      image: "/posters/wiki.png",
+      title: "Dr. Mahesh",
+      image: "/gallery/10.jpg",
+    },
+    {
+      id: 11,
+      title: "C Session",
+      image: "/gallery/11.jpg",
+    },
+    {
+      id: 12,
+      title: "C Session",
+      image: "/gallery/12.jpg",
     },
   ];
 
