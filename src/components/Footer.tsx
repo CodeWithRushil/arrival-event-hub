@@ -61,7 +61,7 @@ const Footer = () => {
               key={i}
               src={logo}
               alt="Club logo"
-              className="w-[80px] h-[30px] opacity-80 hover:opacity-100 transition"
+              className="w-[75px] h-[35px] opacity-80 hover:opacity-100 transition"
             />
           ))}
         </div>
