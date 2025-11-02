@@ -14,7 +14,7 @@ const Gallery = () => {
     {
       id: 2,
       title: "Auctionomics",
-      image: "/gallery/2.jpg",
+      image: "/gallery/2.jpeg",
     },
     {
       id: 3,
@@ -24,7 +24,7 @@ const Gallery = () => {
     {
       id: 4,
       title: "Auctionomics",
-      image: "/gallery/4.jpg",
+      image: "/gallery/4.jpeg",
     },
     {
       id: 5,
@@ -34,7 +34,7 @@ const Gallery = () => {
     {
       id: 6,
       title: "Winners of Auctionomics",
-      image: "/gallery/6.jpg",
+      image: "/gallery/6.jpeg",
     },
     {
       id: 7,
@@ -44,7 +44,7 @@ const Gallery = () => {
     {
       id: 8,
       title: "MatLab Session",
-      image: "/gallery/8.jpg",
+      image: "/gallery/8.jpeg",
     },
     {
       id: 9,
@@ -54,7 +54,7 @@ const Gallery = () => {
     {
       id: 10,
       title: "Dr. Mahesh",
-      image: "/gallery/10.jpg",
+      image: "/gallery/10.jpeg",
     },
     {
       id: 11,
@@ -64,7 +64,47 @@ const Gallery = () => {
     {
       id: 12,
       title: "C Session",
-      image: "/gallery/12.jpg",
+      image: "/gallery/12.jpeg",
+    },
+    {
+      id: 13,
+      title: "C Session",
+      image: "/gallery/13.jpg",
+    },
+    {
+      id: 14,
+      title: "C Session",
+      image: "/gallery/14.jpg",
+    },
+    {
+      id: 15,
+      title: "C Session",
+      image: "/gallery/15.jpeg",
+    },
+    {
+      id: 16,
+      title: "C Session",
+      image: "/gallery/16.jpg",
+    },
+    {
+      id: 17,
+      title: "C Session",
+      image: "/gallery/17.jpeg",
+    },
+    {
+      id: 18,
+      title: "C Session",
+      image: "/gallery/18.jpg",
+    },
+    {
+      id: 19,
+      title: "C Session",
+      image: "/gallery/19.jpg",
+    },
+    {
+      id: 20,
+      title: "C Session",
+      image: "/gallery/20.jpg",
     },
   ];
 
